@@ -1,7 +1,7 @@
 # Dev Stack Builder
 
 A modern, interactive single-page website for exploring popular web development
-technologies and assembling your own developer stack. Browse 15 hand-picked
+technologies and assembling your own developer stack. Browse 12 hand-picked
 tools across Frontend, Backend, Database, Language, Styling, DevOps and Tools —
 compare their ratings and difficulty, then add the ones you like to a stack
 panel to curate your perfect toolkit.

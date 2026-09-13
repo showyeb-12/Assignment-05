@@ -10,16 +10,6 @@
     "badge": "Popular"
   },
   {
-    "id": "vue",
-    "name": "Vue.js",
-    "category": "Frontend",
-    "description": "A progressive JavaScript framework with a gentle learning curve for building versatile single-page apps.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Vue.js.svg",
-    "rating": 4.7,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Approachable"
-  },
-  {
     "id": "nextjs",
     "name": "Next.js",
     "category": "Frontend",
@@ -80,16 +70,6 @@
     "badge": "Utility-First"
   },
   {
-    "id": "sass",
-    "name": "Sass",
-    "category": "Styling",
-    "description": "A mature CSS preprocessor adding variables, nesting and mixins for cleaner stylesheets.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Sass.svg",
-    "rating": 4.4,
-    "difficulty": "Intermediate",
-    "badge": "Powerful"
-  },
-  {
     "id": "postgresql",
     "name": "PostgreSQL",
     "category": "Database",
@@ -128,16 +108,6 @@
     "rating": 4.8,
     "difficulty": "Advanced",
     "badge": "Containers"
-  },
-  {
-    "id": "kubernetes",
-    "name": "Kubernetes",
-    "category": "DevOps",
-    "description": "An open-source platform for automating the deployment, scaling and management of containers.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Kubernetes.svg",
-    "rating": 4.5,
-    "difficulty": "Advanced",
-    "badge": "Orchestration"
   },
   {
     "id": "vite",
