@@ -1,10 +1,3 @@
-const heroIcons = [
-  { src: 'https://icon.icepanel.io/Technology/svg/React.svg', label: 'React', pos: 'left-0 top-0', anim: 'animate-float' },
-  { src: 'https://icon.icepanel.io/Technology/svg/Node.js.svg', label: 'Node.js', pos: 'right-4 top-8', anim: 'animate-float-delay' },
-  { src: 'https://icon.icepanel.io/Technology/svg/PostgresSQL.svg', label: 'PostgreSQL', pos: 'left-6 bottom-4', anim: 'animate-float-delay' },
-  { src: 'https://icon.icepanel.io/Technology/svg/Docker.svg', label: 'Docker', pos: 'right-0 bottom-10', anim: 'animate-float' },
-]
-
 function Hero() {
   return (
     <section id="home" className="dev-grid-bg relative overflow-hidden">
@@ -15,7 +8,7 @@ function Hero() {
         <div className="text-center lg:text-left">
           <span className="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-indigo-700">
             <span className="h-2 w-2 rounded-full bg-indigo-500" />
-            15+ Modern Technologies
+            12+ Modern Technologies
           </span>
 
           <h1 className="mt-6 text-4xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
@@ -46,52 +39,18 @@ function Hero() {
           </div>
         </div>
 
-        {/* Banner image — layered stack illustration */}
-        <div className="relative mx-auto hidden w-full max-w-md sm:block">
-          <div className="pointer-events-none absolute inset-0 -z-10 translate-x-3 translate-y-3 rounded-3xl bg-indigo-500/20 blur-2xl" />
-
-          <div className="relative rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-2xl shadow-indigo-500/10 backdrop-blur">
-            <div className="flex items-center gap-2 rounded-t-xl border-b border-slate-200 px-2 pb-3">
-              <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
-              <span className="h-2.5 w-2.5 rounded-full bg-amber-400" />
-              <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
-            </div>
-
-            <div className="mt-4 space-y-3">
-              {[
-                { title: 'Frontend', techs: ['React', 'Next.js', 'Tailwind'] },
-                { title: 'Backend', techs: ['Node.js', 'Express'] },
-                { title: 'Database', techs: ['PostgreSQL', 'MongoDB', 'Redis'] },
-              ].map((layer) => (
-                <div
-                  key={layer.title}
-                  className="flex items-center justify-between rounded-xl border border-slate-200 bg-slate-50 px-4 py-3"
-                >
-                  <span className="text-sm font-semibold text-slate-800">{layer.title}</span>
-                  <span className="font-mono text-xs text-indigo-600">{layer.techs.join(' · ')}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-4 rounded-xl border border-dashed border-slate-300 p-3 text-center text-xs text-slate-500">
-              +2 more layers ready to add
-            </div>
-          </div>
-
-          {/* Floating tech icon badges */}
-          {heroIcons.map((icon) => (
-            <div
-              key={icon.label}
-              className={`absolute ${icon.pos} ${icon.anim} flex h-14 w-14 items-center justify-center rounded-2xl border border-slate-200 bg-white shadow-xl`}
-              title={icon.label}
-            >
-              <img src={icon.src} alt={icon.label} className="h-7 w-7" />
-            </div>
-          ))}
+        {/* Banner image — container illustration */}
+        <div className="relative mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-md">
+          <div className="pointer-events-none absolute inset-0 -z-10 translate-x-4 translate-y-4 rounded-[2rem] bg-indigo-500/20 blur-2xl" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/Container.png`}
+            alt="Stack container illustration"
+            className="w-full rounded-[2rem] border border-white/40 shadow-2xl shadow-indigo-500/20"
+          />
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
