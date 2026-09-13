@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+:root {
+  /* ------------------------------------------------------------------
+     Brand theme — change the gradient value here and the whole UI
+     (brand name, hero heading highlight, primary buttons) re-themes.
+     ------------------------------------------------------------------ */
+  --brand-gradient: linear-gradient(90deg, #4878f0 0%, #a860d8 55%, #e14db4 100%);
+}
+
+/* Gradient text used on the brand name and hero heading highlight */
+.brand-gradient-text {
+  background-image: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Gradient background used on primary buttons and accents */
+.brand-gradient-bg {
+  background-image: var(--brand-gradient);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-700 antialiased;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float 6s ease-in-out 1.2s infinite;
+}
+
+/* Subtle grid backdrop inspired by dev-tools aesthetics */
+.dev-grid-bg {
+  background-image:
+    linear-gradient(rgba(72, 120, 240, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(72, 120, 240, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
